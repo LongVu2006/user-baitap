@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="icon" href="image/logo.png">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+	<!-- css tab -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- end css tab -->
+	<link rel="stylesheet" href="library/css/banner-detail.css">
+	<link rel="stylesheet" href="library/css/dropdown.css">
+	<link rel="stylesheet" href="library/css/layout-detail.css">
+	<link rel="stylesheet" href="library/css/follow.css">
+	<link rel="stylesheet" href="library/css/pagination.css">
+	<link rel="stylesheet" href="library/css/modal.css">
+	<link rel="stylesheet" href="library/css/modal-rent.css">
+	<link rel="stylesheet" href="library/css/toggle-menu.css">
+	<link rel="stylesheet" href="library/css/message.css">
+</head>
+<body>
+			<!-- Div tổng -->
+<div class="body">
+
+<!-- Header -->
+		<div class="sc-header">
+		<div class="container container-header">
+			<div class="flex-banner">
+
+<!-- Logo -->
+				<div class="logo">
+					<div class="item-logo">
+						<img src="image/logo.png">
+					</div>
+				</div>
+												<!-- End Logo -->
+
+<!-- Menu -->
+				<div class="menu-header">
+					<div class="name-menu"><h4>Thêm người chơi</h4></div>
+
+					<div class="item">
+
+						<ul class="menu">
+							
+							<li><a href="user.html" id="home-page">Trang Chủ</a></li>
+							<li><a href="#" class="active" id="hire-players">Thuê người chơi</a></li>
+							<li><a href="#" id="watching">Đang theo dõi</a></li>
+
+						</ul>
+					</div>
+				</div>
+												<!-- End Menu -->
+
+<!-- Contact -->
+				<div class="contact-us-profile">
+					<div class="item contact_us">
+						<div class="contact">
+							<a href="#" id="search"><img src="image/search.svg"></a>
+							<a href="#" id="contact-banner"><img src="image/contact.svg"></a>
+							<a href="#"><img src="image/announcement.svg"></a>
+						</div>
+						<div class="profile">
+							<div class="dropdown">
+								<div id="dropdown">
+									<div class="image_dropdown">
+										<img src="image/admin.png" id="myBtn" class="dropbtn">
+									</div>
+								   
+								    <div id="myDropdown" class="dropdown-content">
+								        <a href="#home">Nạp tiền</a>
+								        <a href="#about">Rút tiền</a>
+								        <a href="#contact">Lịch sử giao dịch</a>
+								        <a href="account-settings.html">Cài đặt tài khoản</a>
+								        <a href="#logout">Đăng xuất</a>
+								    </div>
+							    </div>
+							    <div id="text">
+							    	<div style="font-weight: 500;"><font color="#650107">HoangNguyen</font></div>
+							    	<div style="color: #AD767A;"><font color="#FE616B;">15,000</font> đ</div>
+								</div>
+								<div id="icon_the_mouth">
+									<img src="image/icon.svg">
+								</div>
+								</div>
+							</div>
+						</div>
+						<!-- Toggle Menu -->
+					<div class="hamburger-menu">
+				    <input id="menu__toggle" type="checkbox" />
+				    <label class="menu__btn" for="menu__toggle">
+				      <span></span>
+				    </label>
+				    <div class="menu__box">
+				    	<div class="padding__box">
+					    	<div class="image__box">
+						    	<div><img src="image/togglemenu.svg"></div>
+						    	<div class="text__box__menu">
+						    		<div>HoangNguyen</div>
+						    		<div>15,000 <span>đ</span></div>
+						    	</div>
+					    	</div>
+						    <ul>
+									<li><a class="menu__item border" href="#">Trang chủ</a></li>
+									<li><a class="menu__item border" href="#">Thuê người chơi</a></li>
+									<li><a class="menu__item" href="#">Đang theo dõi</a></li>
+						    </ul>
+					    </div>
+					    <div class="button__menu_toggle">
+					    	<button>Đăng Xuất</button>
+					    </div>
+				  	</div>
+				  </div>
+		  	<!-- End Toggle Menu -->
+					</div>
+												<!-- End Contact -->
+
+				</div>
+			</div>
+		</div>
+<!-- End sc-header -->
+
+<!-- Center -->
+		<div class="sc-center">
+			<div class="item-top">
+				<div class="main-item">
+					<div class="avatar"><img src="image/avatar.svg"></div>
+					<div class="contact-page">
+						<div class="follow">
+							<div class="follow-profile">
+								<div id="name">Nguyễn Thị Bảo Trân</div>
+								<div class="rating-love ">
+     								<span class="fa fa-heart full"></span>
+								    <span class="fa fa-heart full"></span>
+								    <span class="fa fa-heart full"></span>
+								    <span class="fa fa-heart full"></span>
+								    <span class="fa fa-heart-o half"></span>
+								</div>   
+							</div>
+							<input type="checkbox" name="">
+						</div>
+						<div class="donate">
+							<div>50,000 <span id="vnđ">đ/h</span></div>
+							<div class="flex-donate">
+								<div class="button-donate">
+<!-- Thuê -->
+								<button class="button" onclick="window.location.href='#popup1'">Thuê</button>
+
+								<div id="popup1" class="overlay">
+									<div class="popup">
+										<div class="rent-but padding-modal">
+											<div id="name-rent">Thuê</div>
+											<a class="popup-close" href="#">&times;</a>
+										</div>
+										<div class="layout-modal-rent">
+									        <div class="image-modal-rent">
+									          	<img src="image/modal3.png">
+									          	<div class="text-image-rent">
+									          		<div>Trần Thị Thùy Linh</div>
+									          		<div>50,000 <span>VNĐ</span></div>
+									          	</div>
+									        </div>
+									    </div>
+										<div class="donation-rent padding-modal">
+									        <div>Số tiền muốn Donate</div>
+									        <div class="time-rent">
+									        	<div>10 <span>Giờ</span></div>
+									        	<div class="sign">-</div>
+									        	<div class="sign">+</div>
+									        </div>
+								     	</div>
+								     	<div>200,000 <span>VNĐ</span></div>
+								      	<div class="surplus-rent padding-modal">
+									        <div>Số dư hiện tại</div>
+									        <div>0 <span>VNĐ</span></div>
+									        <div id="plus-rent"><button>+</button></div>
+									    </div>
+										<div class="add-message-rent padding-modal">
+								          <textarea class="add-mess1" placeholder="Thêm lời nhắn"></textarea>
+								      	</div>
+								      	<div class="rent-button padding-modal">
+								        	<button id="send-rent">Thuê</button>
+								      	</div>
+									</div>
+								</div>
+																																			
+<!-- Donate -->
+								<div>
+									<button id="donate">Donate</button>
+
+									<!-- The Modal -->
+									<div id="myModal" class="modal">
+
+									  <!-- Modal content -->
+									  <div class="modal-content">
+									  <!-- Close -->
+									      <div class="donate-but padding-modal">
+									        <div id="name-donate">Donate</div>
+									        <span class="close">&times;</span>
+									      </div>
+									  <!-- Layout modal -->
+									      <div class="layout-modal">
+									        <div class="image-modal">
+									          <img src="image/modal1.png">
+									          <img src="image/modal2.png">
+									          <img src="image/modal3.png">
+									        </div>
+									        <div class="contact-modal">
+									          <div class="name-modal">
+									            <div>Nguyễn Đình Trần Thiện</div>
+									            <img src="image/pen.svg">
+									            <div>Trần Thị Thùy Linh</div>
+									          </div>
+									          <div class="sender-receiver">
+									            <div>Người gửi (bạn)</div>
+									            <div>Người nhận</div>
+									          </div>
+									        </div>
+									      </div>
+									  <!-- Donation Amount -->
+									      <div class="donation-amount padding-modal">
+									        <div>Số tiền muốn Donate</div>
+									        <div>150,000<span>VNĐ</span></div>
+									      </div>
+									      <div class="surplus padding-modal">
+									        <div>Số dư hiện tại</div>
+									        <div>0 <span>VNĐ</span></div>
+									        <div id="plus"><button>+</button></div>
+									      </div>
+
+									  <!-- Add Message -->
+									      <div class="add-message padding-modal">
+									        <textarea class="add-mess" placeholder="Thêm lời nhắn"></textarea>
+									      </div>
+									      <div class="donate-button padding-modal">
+									        <button id="send-donate">Donate</button>
+									      </div>
+									  </div>
+									</div>
+								</div>
+<!-- Message -->
+								<div>
+									<button class="message" onclick="window.location.href='#chatbox'">Nhắn tin</button>
+									<div id="chatbox" class="chatbox">
+										<div class="chat__window">
+											<div class="header__chat">
+												<div class="name_image">
+													<img src="image/people__chat.svg">
+													<div>Nguyễn Đình Trần Thiện</div>
+												</div>
+												<a class="chat__close" href="#">&times;</a>
+											</div>
+
+											<div class="layout__chat">
+												<div class="people__chat">
+													<img src="image/people__chat.svg">
+													<div class="text__people">
+														<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+														<div>22/10/2020 | 08:32</div>
+													</div>
+												</div>
+
+												<div class="me__chat">
+													<img src="image/you__chat.svg">
+													<div class="text__me">
+														<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+														<div>25/12/2020 | 10:55</div>
+													</div>
+												</div>
+
+												<div class="send__chat">
+													<div class="text__send">
+														<img src="image/you__chat.svg">
+														<input type="text" name="" placeholder="Nhập tin nhắn">
+													</div>
+													<div class="link__send">
+														<a href=""><img src="image/link.svg"></a>
+														<a href=""><img src="image/planes.svg" id="plane"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+									<!-- End Message -->
+								</div>
+
+								<div class="flex-parameter">
+									<div class="parameter">
+										<div class="name-parameter">Số người theo dõi</div>
+										<div class="number-parameter">320</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+									</div>
+									<div class="parameter">
+										<div class="name-parameter">Số giờ được thuê</div>
+										<div class="number-parameter">1862</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+									</div>
+									<div class="parameter">
+										<div class="name-parameter">Tỷ lệ hoàn thành</div>
+										<div class="flex-skills">
+											<div class="container-skills">
+  												<div class="skills"></div>
+											</div>
+											<div>96<span>%</span></div>
+										</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+									</div>
+									<div class="device">
+										<div class="name-parameter">Thiết bị</div>
+										<div>
+											<img src="image/camera.svg">
+											<img src="image/microphone.svg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bottom -->
+			<div class="item-layout">
+
+				<!-- tab menu -->
+				<div class="container-tab">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Thông Tin Chung</a></li>
+    <li><a data-toggle="tab" href="#menu1">Giới Thiệu</a></li>
+    <li><a data-toggle="tab" href="#menu2">Top Donate</a></li>
+    <li><a data-toggle="tab" href="#menu3">Đánh giá</a></li>
+   
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    	<div class="flex-parameter tab1 tab1-flex">
+    		       <div class="tab1-item">
+    		       	   <div class="parameter">
+										<div class="name-parameter">Số người theo dõi</div>
+										<div class="number-parameter">320</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+						</div>
+						 <div class="parameter">
+										<div class="name-parameter">Tỷ lệ hoàn thành</div>
+										<div class="flex-skills">
+											<div class="container-skills">
+  												<div class="skills"></div>
+											</div>
+											<div>96<span>%</span></div>
+										</div>
+						</div>
+						
+    		       </div>
+    		       <div class="tab1-item">
+    		       	  
+						<div class="parameter">
+										<div class="name-parameter">Số giờ được thuê</div>
+										<div class="number-parameter">1862</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+									</div>
+								
+								<div class="device">
+										<div class="name-parameter">Thiết bị</div>
+										<div>
+											<img src="image/camera.svg">
+											<img src="image/microphone.svg">
+										</div>
+									</div>
+    		       </div>
+									
+									
+									
+								</div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+              
+						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+						<div class="image-introduce">
+							<img src="image/introduce1.png">
+							<img src="image/introduce2.png">
+							<img src="image/introduce3.png">
+							<img src="image/introduce4.png">
+							<img src="image/introduce5.png">
+							<a href=""><img src="image/introduce6.png"></a>
+						</div>			
+    </div>
+    <div id="menu2" class="tab-pane fade">			
+           <div class="top-donate">
+						
+						<div class="donation-order">
+							<div class="image-donate">
+								<div class="flex-image-donate">
+									<img src="image/top-donate1.png"><div class="name-top-donate">Linh Trần</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate2.png"><div class="name-top-donate">Toan Thien Tran</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate3.png"><div class="name-top-donate">Hữu Long</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate4.png"><div class="name-top-donate">Thùy Nguyễn</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate5.png"><div class="name-top-donate">Duong Le</div>
+								</div>
+							</div>
+
+							<div class="quantity-donate">
+								<div class="quantity-vietnam-dong" style="padding-left: 6px;">
+									350,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 4px;">
+									240,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 8px;">
+									120,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 13px;">
+									64,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 24px;">
+									8,000 <div class="vietnam-dong">đ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+    </div>
+    <div id="menu3" class="tab-pane fade">			
+             <div class="evaluate">
+					
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right1.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Linh Trần</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right2.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Thiện Nguyễn</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Jimmny Huỳnh</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+						
+						<div class="pagination">
+						  <a href="#"><img src="image/left.svg"></a>
+						  <a class="active" href="#">1</a>
+						  <a href="#">2</a>
+						  <a href="#">...</a>
+						  <a href="#">8</a>
+						  <a href="#" class="larger-sign"><img src="image/right.svg"></a>
+						</div>
+					</div>
+    </div>
+    
+  </div>
+  </div>
+  <!-- end tab -->
+												<!-- Frame1 -->
+				<div class="frame1">
+<!-- Introduce -->
+					<div class="introduce">
+						<div class="text-frame1">GIỚI THIỆU</div>
+						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+						<div class="image-introduce">
+							<img src="image/introduce1.png">
+							<img src="image/introduce2.png">
+							<img src="image/introduce3.png">
+							<img src="image/introduce4.png">
+							<img src="image/introduce5.png">
+							<a href=""><img src="image/introduce6.png"></a>
+						</div>
+					</div>
+
+<!-- Top Donate -->
+					<div class="top-donate">
+						<div class="text-frame1">TOP DONATE</div>
+						<div class="donation-order">
+							<div class="image-donate">
+								<div class="flex-image-donate">
+									<img src="image/top-donate1.png"><div class="name-top-donate">Linh Trần</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate2.png"><div class="name-top-donate">Toan Thien Tran</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate3.png"><div class="name-top-donate">Hữu Long</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate4.png"><div class="name-top-donate">Thùy Nguyễn</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate5.png"><div class="name-top-donate">Duong Le</div>
+								</div>
+							</div>
+
+							<div class="quantity-donate">
+								<div class="quantity-vietnam-dong" style="padding-left: 6px;">
+									350,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 4px;">
+									240,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 8px;">
+									120,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 13px;">
+									64,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 24px;">
+									8,000 <div class="vietnam-dong">đ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- Evaluate -->
+					<div class="evaluate">
+						<div class="text-frame1">ĐÁNH GIÁ</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right1.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Linh Trần</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right2.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Thiện Nguyễn</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Jimmny Huỳnh</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right3.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Trần Phú</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right2.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Linh Trần</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate bottom">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Khánh Duy</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="pagination">
+						  <a href="#"><img src="image/left.svg"></a>
+						  <a class="active" href="#">1</a>
+						  <a href="#">2</a>
+						  <a href="#">...</a>
+						  <a href="#">8</a>
+						  <a href="#" class="larger-sign"><img src="image/right.svg"></a>
+						</div>
+					</div>
+				</div>
+
+							<!-- Frame2 -->
+				<div class="frame2">
+					<div class="status">
+						<form  class="write-status">
+							<div><img src="image/people.svg"></div>
+							<input type="text" placeholder="Bạn đang nghĩ gì?...">
+						</form>
+					</div>
+
+					<div class="frame-layout-top">
+								<!-- Content Layout -->
+						<div class="flex-layout-top">
+							<div><img src="image/people.svg"></div>
+							<div class="text-layout-top">
+								<div>Nguyễn Đình Trần Thiện</div>
+								<div>19/01/2021 - 20:32</div>
+							</div>
+						</div>
+						<div class="text-layout-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+						<div class="layout-top">
+							<img src="image/image-layout-top1.png">
+						</div>
+						
+						<div class="heart">
+							<img src="image/heart.svg">
+							<div><span>15</span> người thích bài viết này</div>
+						</div>
+						<div>
+							<form  class="write-comment">
+								<img src="image/people.svg">
+								<input type="text" placeholder="Viết bình luận...">
+							</form>
+						</div>
+					</div>
+
+					<div class="frame-layout-center">
+								<!-- Content Layout -->
+						<div class="flex-layout-center">
+							<div><img src="image/people.svg"></div>
+							<div class="text-layout-center">
+								<div>Nguyễn Đình Trần Thiện</div>
+								<div>19/01/2021 - 20:32</div>
+							</div>
+						</div>
+						<div class="text-layout-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+						<div class="image-layout-center">
+							<div class="image-bottom-top">
+									<div class="image-top">
+										<img src="image/image-layout-bottom1-1.png">
+									</div>
+									<div class="image-top">
+										<img src="image/image-layout-bottom2-2.png">
+									</div>
+								</div>
+
+								<div class="image-bottom-bottom">
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom3-3.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom4-4.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom5-5.png">
+									</div>
+								</div>
+						</div>
+						<div class="heart">
+							<img src="image/heart.svg">
+							<div><span>15</span> người thích bài viết này</div>
+						</div>
+						<div>
+							<form  class="write-comment">
+								<img src="image/people.svg">
+								<input type="text" placeholder="Viết bình luận...">
+							</form>
+						</div>
+				</div>
+				<div class="frame-layout-top">
+								<!-- Content Layout -->
+					<div class="flex-layout-top">
+						<div><img src="image/people.svg"></div>
+						<div class="text-layout-top">
+							<div>Nguyễn Đình Trần Thiện</div>
+							<div>19/01/2021 - 20:32</div>
+						</div>
+					</div>
+					<div class="text-layout-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+					<div class="layout-top">
+						<img src="image/image-layout-top2.png">
+					</div>
+					
+					<div class="heart">
+						<img src="image/heart.svg">
+						<div><span>15</span> người thích bài viết này</div>
+					</div>
+					<div>
+						<form  class="write-comment">
+							<img src="image/people.svg">
+							<input type="text" placeholder="Viết bình luận...">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- End sc-center -->
+
+	</div>
+<script src="library/js/banner.js"></script>
+<script src="library/js/modal.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.message').click(function(){
+			$('.chat__window').addClass('new__window');
+		})
+		$('.chat__close').click(function(){
+			$('.chat__window').removeClass('new__window');
+		})
+	})
+</script>
+</body>
+</html>
+
+  
+  
+  
+
+  
+
+
+
+

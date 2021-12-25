@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<!-- css tab -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- end css tab -->
+	<link rel="icon" href="image/logo.png">
+	<link rel="stylesheet" href="library/css/banner.css">
+	<link rel="stylesheet" href="library/css/dropdown.css">
+	<link rel="stylesheet" href="library/css/layout.css">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		div.clickEffect{
+			position:fixed;
+			box-sizing:border-box;
+			border-style:solid;
+			border-color:#000000;
+			border-radius:50%;
+			animation:clickEffect 0.4s ease-out;
+			z-index:99999;
+		}
+		@keyframes clickEffect{
+			0%{
+				opacity:1;
+				width:0.5em; height:0.5em;
+				margin:-0.25em;
+				border-width:0.5rem;
+			}
+			100%{
+				opacity:0.2;
+				width:15em; height:15em;
+				margin:-7.5em;
+				border-width:0.03rem;
+			}
+		}
+</style>
+</head>
+<body>
+	
+	<div class="sc-header">
+		<div class="container container-header">
+			<div class="flex-banner">
+
+					<!-- Logo -->
+				<div class="logo">
+					<div class="item-logo">
+						<img src="image/logo.png">
+					</div>
+				</div>
+					<!-- End Logo -->
+
+					<!-- Menu -->
+				<div class="menu-header">
+					<div class="item">
+						<ul class="menu">
+							<li><a href="#" class="active" id="home-page">Trang Chủ</a></li>
+							<li><a href="detail.html" id="hire-players">Thuê người chơi</a></li>
+							<li><a href="#" id="watching">Đang theo dõi</a></li>
+						</ul>
+					</div>
+				</div>
+					<!-- End Menu -->
+
+					<!-- Contact -->
+				<div class="contact-us-profile">
+					<div class="item contact_us">
+						<div class="contact">
+							<a href="#" id="search"><img src="image/search.svg"></a>
+							<a href="#" id="contact-banner"><img src="image/contact.svg"></a>
+							<a href="#"><img src="image/announcement.svg"></a>
+						</div>
+						<div class="profile">
+							<div class="dropdown">
+								<div id="dropdown">
+									<div class="image_dropdown">
+										<img src="image/admin.png" id="myBtn" class="dropbtn">
+									</div>
+								   
+								    <div id="myDropdown" class="dropdown-content">
+								        <a href="#home">Nạp tiền</a>
+								        <a href="#about">Rút tiền</a>
+								        <a href="#contact">Lịch sử giao dịch</a>
+								        <a href="account-settings.html">Cài đặt tài khoản</a>
+								        <a href="#logout">Đăng xuất</a>
+								    </div>
+							    </div>
+							    <div id="text">
+							    	<div style="font-weight: 500;"><font color="#650107">HoangNguyen</font></div>
+							    	<div style="color: #AD767A;"><font color="#FE616B;">15,000</font> đ</div>
+								</div>
+								<div id="icon_the_mouth">
+									<img src="image/icon.svg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- End Contact -->
+
+			</div>
+		</div>
+	</div>
+	<!-- End sc-header -->
+
+
+	<div class="sc-layout">
+		<div class="container container-layout">
+				<div class="flex-layout">
+					 <div class="container tab">
+ 
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Top Đại Gia Tuần</a></li>
+    <li><a data-toggle="tab" href="#menu1">Trò Chuyện</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    	           <div class="rick-top">
+						<div class="rick-week">
+							<div class="text-rick">ĐẠI GIA TUẦN</div>
+							<div class="rick-image"><img src="image/rick-week.png"></div>
+						</div>
+						<div class="rick-week">
+							<div class="text-rick">ĐẠI GIA THÁNG</div>
+							<div class="rick-image"><img src="image/rick-month.png"></div>
+						</div>
+				    </div>
+				    <div class="rick-bottom">
+						<div class="rick">
+							<div class="text-rick">ĐẠI GIA</div>
+							<div class="rick-image"><img src="image/rick.png"></div>
+						</div>
+					</div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      
+					
+					<div class="content-conversation">
+								<!-- Div1 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">12 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore</div>
+							</div>
+						</div>
+								<!-- Div2 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right1.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">8 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur</div>
+							</div>
+						</div>
+						
+								<!-- Div5 -->
+						<div class="conversation">
+							<form class="form-coversation">
+								<input type="text" placeholder="Nhập tin nhắn...">
+								<img src="image/send.png">
+							</form>
+						</div>
+					
+				</div>
+    </div>
+    
+  </div>
+</div>
+									<!-- Frame1 -->
+					<div class="frame1">
+						<div class="rick-week">
+							<div class="text-rick">TOP ĐẠI GIA TUẦN</div>
+							<div class="rick-image"><img src="image/rick-week.png"></div>
+						</div>
+						<div class="rick-week">
+							<div class="text-rick">TOP ĐẠI GIA THÁNG</div>
+							<div class="rick-image"><img src="image/rick-month.png"></div>
+						</div>
+						<div class="rick">
+							<div class="text-rick">TOP ĐẠI GIA</div>
+							<div class="rick-image"><img src="image/rick.png"></div>
+						</div>
+					</div>
+									<!-- Frame2 -->
+					<div class="frame2">
+						<div class="frame-layout-top">
+									<!-- Content Layout -->
+							<div class="flex-layout-top">
+								<div><img src="image/people.svg"></div>
+								<div class="text-layout-top">
+									<div>Nguyễn Đình Trần Thiện</div>
+									<div>19/01/2021 - 20:32</div>
+								</div>
+							</div>
+							<div class="text-layout-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							<div class="image-layout-top"><img src="image/image-layout-top.png" style="width: 100%;" ></div>
+							<div class="heart">
+								<img src="image/heart.svg">
+								<div><span>15</span> người thích bài viết này</div>
+							</div>
+							<div>
+								<form  class="write-comment">
+									<img src="image/people.svg">
+									<input type="text" placeholder="Viết bình luận...">
+								</form>
+							</div>
+						</div>
+
+						<div class="frame-layout-bottom">
+									<!-- Content Layout -->
+							<div class="flex-layout-bottom">
+								<div><img src="image/people.svg"></div>
+								<div class="text-layout-bottom">
+									<div>Nguyễn Đình Trần Thiện</div>
+									<div>19/01/2021 - 20:32</div>
+								</div>
+							</div>
+							<div class="text-layout-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							<div class="image-layout-bottom">
+								<div class="image-bottom-top">
+									<div class="image-top">
+										<img src="image/image-layout-bottom1.png">
+									</div>
+									<div class="image-top">
+										<img src="image/image-layout-bottom2.png">
+									</div>
+								</div>
+
+								<div class="image-bottom-bottom">
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom3.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom4.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom5.png">
+									</div>
+								</div>
+							</div>
+							<div class="heart">
+								<img src="image/heart.svg">
+								<div><span>15</span> người thích bài viết này</div>
+							</div>
+							<div>
+								<form  class="write-comment">
+									<img src="image/people.svg">
+									<input type="text" placeholder="Viết bình luận...">
+								</form>
+							</div>
+						</div>
+					
+				</div>
+
+							<!-- Frame3 -->
+				<div class="frame3">
+					<div id="conversation"><h4>TRÒ CHUYỆN</h4></div>
+					<div class="content-conversation">
+								<!-- Div1 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">12 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore</div>
+							</div>
+						</div>
+								<!-- Div2 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right1.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">8 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur</div>
+							</div>
+						</div>
+								<!-- Div3 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right2.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">8 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur</div>
+							</div>
+						</div>
+								<!-- Div4 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right3.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">8 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur</div>
+							</div>
+						</div>
+								<!-- Div5 -->
+						<div class="conversation">
+							<form class="form-coversation">
+								<input type="text" placeholder="Nhập tin nhắn...">
+								<img src="image/send.png">
+							</form>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+	<!-- End sc-layout -->
+
+<script type="text/javascript">
+function clickEffect(e){
+	var d=document.createElement("div");
+	d.className="clickEffect";
+	d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+	document.body.appendChild(d);
+	d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+}
+document.addEventListener('click',clickEffect);
+</script>
+
+<script src="library/js/banner.js"></script>
+<script src=""></script>
+<script src=""></script>	
+</body>
+</html>

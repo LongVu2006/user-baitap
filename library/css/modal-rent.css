@@ -1,0 +1,300 @@
+.popup{
+  padding: 24px 0;
+}
+.padding-modal{
+  padding: 0 24px;
+  text-align: right;
+}
+
+/*Style*/
+.rent-but{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+#name-rent{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.024em;
+  color: rgba(101, 1, 7, 0.87);
+}
+.layout-modal-rent{
+  background: #FE616B;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.image-modal-rent{
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.image-modal-rent>img{
+  margin-right: 16px;
+}
+.text-image-rent>div:nth-child(1){
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.024em;
+  color: #FFFFFF;
+}
+.text-image-rent>div:nth-child(2){
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.024em;
+  color: rgba(255, 255, 255, 0.87);
+}
+.text-image-rent>div:nth-child(2)>span{
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.3;
+}
+.donation-rent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.donation-rent>div:nth-child(1){
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.012em;
+  color: #650107;
+}
+.time-rent{
+  display: flex;
+  align-items: center;
+}
+.sign{
+  padding: 10px;
+  width: 12px;
+  height: 12px;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+}
+.time-rent>div:nth-child(1){
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.012em;
+  color: #650107;
+  position: relative;
+}
+.time-rent>div:nth-child(1)>span{
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.6;
+  margin: 0 12px 16px;
+}
+.time-rent>div:nth-child(2){
+  margin-right: 8px;
+}
+.time-rent>div:nth-child(1):after{
+  content: '';
+  width: 64px;
+  height: 1px;
+  background: #E8E8E8;
+  position: absolute;
+  bottom: -4px;
+  left: 35%;
+  transform: translate(-50%);
+}
+.popup>div:nth-child(4){
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.012em;
+  color: #FE616B;
+  margin-right: 88px;
+  margin-bottom: 14px;
+  text-align: right;
+}
+.surplus-rent{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 22px;
+}
+#plus-rent>button{
+  background: #fff;
+  border: 1px solid #FE616B;
+  padding: 10px;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FE616B;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.surplus-rent>div:nth-child(1){
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.012em;
+  color: rgba(101, 1, 7, 0.6);
+}
+.surplus-rent>div:nth-child(2){
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.012em;
+  color: #FE616B;
+  margin-right: 12px;
+  margin-left: 16px;
+}
+.surplus-rent>div:nth-child(2)>span{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(101, 1, 7, 0.6);
+  opacity: 0.5;
+}
+.add-mess1{
+  padding-top: 10px;
+  padding-left: 16px;
+  max-width: 580px;
+  height: 96px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 24px;
+  resize: none;
+  color: rgba(101, 1, 7, 0.32);
+  caret-color:  rgba(101, 1, 7, 0.32);
+}
+textarea:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #FE616B;
+  outline: none;
+  padding-top: 10px;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+.add-mess1::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.012em;
+  color: rgba(101, 1, 7, 0.32);
+}
+#send-rent{
+  background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+  box-shadow: 0px 6px 24px rgba(254, 97, 107, 0.16);
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.012em;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button {
+  border: none;
+  padding: 10px 24px;
+  width: 90px;
+  height: 44px;
+  background: linear-gradient(180deg, #FE858D 0%, #FE616B 100%);
+  box-shadow: 0px 6px 24px rgba(254, 97, 107, 0.16);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.012em;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-right: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  /*transition: opacity 500ms;*/
+  visibility: hidden;
+  opacity: 0;
+  overflow: auto;
+  padding-top: 100px;
+  z-index: 1;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  background: #FFFFFF;
+  border-radius: 24px;
+  margin: auto;
+  max-width: 628px;
+  width: 100%;
+  transition: all 1.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.popup .popup-close {
+  transition: all 200ms;
+  text-decoration: none;
+  color: #650107;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.popup-close:hover,
+.popup-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}*/

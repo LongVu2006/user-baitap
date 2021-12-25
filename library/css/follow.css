@@ -1,0 +1,64 @@
+  /* Standard syntax */
+@keyframes follow-animation {
+  from {
+    background: none;
+    color: #fff;
+    width: 132px;
+    height: 40px;
+  }
+  to 
+  {
+    background: black;
+    border-color: #fff;
+    color: #ffffff;
+    width: 132px;
+    height: 40px;
+  }
+}
+@keyframes unfollow-animation {
+  from {
+    background: black;
+    color: #ffffff;
+    width: 132px;
+    height: 40px;
+  }
+  to {
+    background: none; 
+    border-color: #fff; 
+    color: #fff; 
+    width: 132px;
+    height: 40px;
+  }
+}
+input[type=checkbox]:focus{
+  border: none;
+  outline: none;
+}
+input {
+  -webkit-appearance: none;
+}
+input[type=checkbox]:after {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  cursor: hand;
+  padding: 10px 24px;
+
+    content: '+ Theo Dõi';
+  -webkit-animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-fill-mode:forwards;
+  animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode:forwards;
+}
+
+input:checked:after {
+  content: 'Đang Theo Dõi';
+  -webkit-animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-fill-mode:forwards;
+  animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode:forwards;
+} 
