@@ -30,6 +30,7 @@
 
 					<!-- Menu -->
 				<div class="menu-header">
+					<div class="name-menu"><h4>Thông Tin Cá Nhân</h4></div>
 					<div class="item">
 						<ul class="menu">
 							<li><a href="user.html" id="home-page">Trang Chủ</a></li>
@@ -73,6 +74,33 @@
 							</div>
 						</div>
 					</div>
+					<!-- Toggle Menu -->
+					<div class="hamburger-menu">
+				    <input id="menu__toggle" type="checkbox" />
+				    <label class="menu__btn" for="menu__toggle">
+				      <span></span>
+				    </label>
+				    <div class="menu__box">
+				    	<div class="padding__box">
+					    	<div class="image__box">
+						    	<div><img src="image/togglemenu.svg"></div>
+						    	<div class="text__box__menu">
+						    		<div>HoangNguyen</div>
+						    		<div>15,000 <span>đ</span></div>
+						    	</div>
+					    	</div>
+						    <ul>
+									<li><a class="menu__item border" href="#">Trang chủ</a></li>
+									<li><a class="menu__item border" href="#">Thuê người chơi</a></li>
+									<li><a class="menu__item" href="#">Đang theo dõi</a></li>
+						    </ul>
+					    </div>
+					    <div class="button__menu_toggle">
+					    	<button>Đăng Xuất</button>
+					    </div>
+				  	</div>
+				  </div>
+		  						<!-- End Toggle Menu -->
 				</div>
 					<!-- End Contact -->
 			</div>
@@ -85,15 +113,27 @@
 		<div class="container container-center">
 			<div class="flex-center">
 				<div class="left__center">
-					<div><img src="image/me.svg"></div>
-					<div>Trần Thị Thùy Linh</div>
 					<div>
-						<img src="image/gold-member.svg">
-						<div>Thành viên vàng</div>
+						<img src="image/people.svg">
+						  <div class="image-upload">
+						  <label for="file-input">
+						    <img src="image/cam.svg"/>
+						  </label>
+						  <input id="file-input" type="file" accept=".jpg, .svg, .png"/>
+						</div>
 					</div>
-					<div>
-						<img src="image/dollar.svg">
-						<div>15,000 <span>đ</span></div>
+					<div class="flex-center-mobile">
+						<div>Trần Thị Thùy Linh</div>
+						<div class="flex_mobile">
+							<div>
+								<img src="image/gold-member.svg">
+								<div>Thành viên vàng</div>
+							</div>
+							<div>
+								<img src="image/dollar.svg">
+								<div>15,000 <span>đ</span></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="right__center">
@@ -103,11 +143,11 @@
 								<div class="name__statistic">TỔNG TIỀN ĐÃ NẠP</div>
 								<div class="number_statistic">7,500,000 đ</div>
 							</div>
-							<div class="item__statistic">
+							<div class="item__statistic small_statistic">
 								<div class="name__statistic">TIỀN ĐÃ DONATE</div>
 								<div class="number_statistic">550,000 đ</div>
 							</div>
-							<div class="item__statistic">
+							<div class="item__statistic small_statistic">
 								<div class="name__statistic">SỐ GIỜ ĐÃ THUÊ</div>
 								<div class="number_statistic">120 giờ</div>
 							</div>
@@ -132,9 +172,9 @@
 									<div class="text__info">Giới tính</div>
 									<div>
 										<input type="radio" name="gioi_tinh" id="male">
-										<label for="male">Nam</label>
+										<label class="label" for="male">Nam</label>
 										<input type="radio" name="gioi_tinh" id="female" checked="checked">
-										<label for="female">Nữ</label>
+										<label class="label" for="female">Nữ</label>
 									</div>
 								</div>
 							</div>

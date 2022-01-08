@@ -30,6 +30,7 @@
 
 					<!-- Menu -->
 				<div class="menu-header">
+					<div class="name-menu"><h4>Thông Tin Cá Nhân</h4></div>
 					<div class="item">
 						<ul class="menu">
 							<li><a href="user.html" id="home-page">Trang Chủ</a></li>
@@ -45,8 +46,24 @@
 					<div class="item contact_us">
 						<div class="contact">
 							<a href="#" id="search"><img src="image/search.svg"></a>
-							<a href="#" id="contact-banner"><img src="image/contact.svg"></a>
-							<a href="#"><img src="image/announcement.svg"></a>
+									<!-- Contact -->
+							<a href="#chatbox" class="message" id="contact-banner"><img src="image/contact.svg"></a>
+				           		 <!-- End Contact -->
+				           		 <!-- Notification -->
+							<a href="#" id="announcement"><img src="image/announcement.svg"></a>
+							<ul class="notification-menu">
+	                <li>
+	                  <img class="avatar" src="https://s3.amazonaws.com/codecademy-content/projects/2/feedster/wr2.svg">
+	                  <h3>Long Vũ</h3>
+	                  <p>Hello my friends</p>
+	                </li>
+	                <li>
+	                  <img class="avatar" src="https://s3.amazonaws.com/codecademy-content/projects/2/feedster/fn.svg">
+	                  <h3>Michu</h3>
+	                  <p>1-0 goal!</p>
+	                </li>
+	            </ul>
+				           		 <!-- End Notification -->
 						</div>
 						<div class="profile">
 							<div class="dropdown">
@@ -79,8 +96,7 @@
 		</div>
 	</div>
 		<!-- End sc-header -->
-
-							<!-- Sc-Center -->
+							<!-- Sc-Cenyter -->
 	<div class="sc-center">
 		<div class="container container_center">
 			<div class="title">Lịch Sử Giao Dịch</div>
@@ -273,7 +289,48 @@
 		</div>
 	</div>
 		<!-- End sc-center -->
+<!-- Chat Box -->
+<div id="chatbox" class="chatbox">
+	<div class="chat__window">
+		<div class="header__chat">
+			<div class="name_image">
+				<img src="image/people__chat.svg">
+				<div>Nguyễn Đình Trần Thiện</div>
+			</div>
+			<a class="chat__close" href="#">&times;</a>
+		</div>
 
+		<div class="layout__chat">
+			<div class="people__chat">
+				<img src="image/people__chat.svg">
+				<div class="text__people">
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+					<div>22/10/2020 | 08:32</div>
+				</div>
+			</div>
+
+			<div class="me__chat">
+				<img src="image/you__chat.svg">
+				<div class="text__me">
+					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+					<div>25/12/2020 | 10:55</div>
+				</div>
+			</div>
+
+			<div class="send__chat">
+				<div class="text__send">
+					<img src="image/you__chat.svg">
+					<input type="text" name="" placeholder="Nhập tin nhắn">
+				</div>
+				<div class="link__send">
+					<a href=""><img src="image/link.svg"></a>
+					<a href=""><img src="image/planes.svg" id="plane"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Chat Box -->
 <!-- Modal Nạp Tiền -->
 	<div id="popup1" class="overlay">
 		<div class="popup">
@@ -342,7 +399,7 @@
 <script type="text/javascript">
 	$(function() {
   		$(".up_down").on("click",function() {
-  			$('.up_down').toggleClass('new__window');
+  			$('.up_down').toggleClass('new_window');
   			$('.ellipsis').toggleClass('word_wrap');
   			$('.donate_table').toggleClass('visible_donate');
   			$('.table_flex_content1').toggleClass('table_flex_content');
@@ -355,8 +412,24 @@
 	    $(".pass").hide();
 	    $(".password").hide();
 	  });
+	$('.message').click(function(){
+		$('.chat__window').addClass('new__window');
+	})
+	$('.chat__close').click(function(){
+		$('.chat__window').removeClass('new__window');
+	})
 	});
 </script>
+<script type="text/javascript">
+    var main = function() {
+  $('#announcement').click(function() {
+    $('.notification-menu').toggle(); 
+  }); 
+}; 
+$(document).ready(main); 
+</script>
+<script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
+<script src="script.js"></script>
 <script src="library/js/banner.js"></script>
 </body>
 </html>

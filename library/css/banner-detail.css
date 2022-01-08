@@ -127,8 +127,8 @@ ul>li>a{
 }
 #icon_the_mouth{
 	position: relative;
-  top: 16px;
-  right: 150px;
+  	top: 16px;
+  	right: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
