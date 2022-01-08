@@ -868,7 +868,9 @@ ul>li>a{
     left: 50%;
     transform: translate(-50%,0);
 }
-
+.cart-bottom>div>img{
+	margin-right: 4px;
+}
 .cart-infor{
 	display: flex;
 	flex-direction: column;
