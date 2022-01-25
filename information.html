@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- css tab -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- end css tab -->
+	<link rel="icon" href="image/logo.png">
+	<link rel="stylesheet" href="library/css/information.css">
+</head>
+
+<body>
+<div class="all">
+							<!-- Sc-Header -->
+	<div class="sc-header">
+		<div class="container container-header">
+			<div class="flex-banner">
+
+					<!-- Logo -->
+				<div class="logo">
+					<div class="item-logo">
+						<img src="image/logo.png">
+					</div>
+				</div>
+					<!-- End Logo -->
+
+					<!-- Menu -->
+				<div class="menu-header">
+					<div class="name-menu"><h4>Thêm người chơi</h4></div>
+					<div class="item">
+						<ul class="menu">
+							<li><a href="user.html" id="home-page">Trang Chủ</a></li>
+							<li><a href="detail.html" id="hire-players">Thuê người chơi</a></li>
+							<li><a href="#" id="watching">Đang theo dõi</a></li>
+						</ul>
+					</div>
+				</div>
+					<!-- End Menu -->
+
+					<!-- Contact -->
+				<div class="contact-us-profile">
+					<div class="item contact_us">
+						<div class="contact">
+							<a href="#" id="search"><img src="image/search.svg"></a>
+									<!-- Contact -->
+							<a href="#chatbox" class="message" id="contact-banner"><img src="image/contact.svg"></a>
+				           		 <!-- End Contact -->
+				           		 <!-- Notification -->
+							<a href="#" id="announcement"><img src="image/announcement.svg"></a>
+							<ul class="notification-menu">
+	                <li>
+	                  <img class="avatar" src="https://s3.amazonaws.com/codecademy-content/projects/2/feedster/wr2.svg">
+	                  <h3>Long Vũ</h3>
+	                  <p>Hello my friends</p>
+	                </li>
+	                <li>
+	                  <img class="avatar" src="https://s3.amazonaws.com/codecademy-content/projects/2/feedster/fn.svg">
+	                  <h3>Michu</h3>
+	                  <p>1-0 goal!</p>
+	                </li>
+	            </ul>
+				           		 <!-- End Notification -->
+						</div>
+						<div class="profile">
+							<div class="dropdown">
+								<div id="dropdown">
+									<div class="image_dropdown">
+										<img src="image/admin.png" id="myBtn" class="dropbtn">
+									</div>
+								   
+								    <div id="myDropdown" class="dropdown-content">
+								        <a href="#popup1" class="button">Nạp tiền</a>
+								        <a href="#about">Rút tiền</a>
+								        <a href="#contact">Lịch sử giao dịch</a>
+								        <a href="account-settings.html">Cài đặt tài khoản</a>
+								        <a href="#logout">Đăng xuất</a>
+								    </div>
+							    </div>
+							    <div id="text">
+							    	<div style="font-weight: 500;"><font color="#650107">HoangNguyen</font></div>
+							    	<div style="color: #AD767A;"><font color="#FE616B;">15,000</font> đ</div>
+								</div>
+								<div id="icon_the_mouth">
+									<img src="image/icon.svg">
+								</div>
+							</div>
+						</div>
+					</div>
+						<!-- Toggle Menu -->
+					<div class="hamburger-menu">
+				    <input id="menu__toggle" type="checkbox" />
+				    <label class="menu__btn" for="menu__toggle">
+				      <span></span>
+				    </label>
+				    <div class="menu__box">
+				    	<div class="padding__box">
+					    	<div class="image__box">
+						    	<div><img src="image/togglemenu.svg"></div>
+						    	<div class="text__box__menu">
+						    		<div>HoangNguyen</div>
+						    		<div>15,000 <span>đ</span></div>
+						    	</div>
+					    	</div>
+						    <ul>
+									<li><a class="menu__item border" href="#">Trang chủ</a></li>
+									<li><a class="menu__item border" href="#">Thuê người chơi</a></li>
+									<li><a class="menu__item" href="#">Đang theo dõi</a></li>
+						    </ul>
+					    </div>
+					    <div class="button__menu_toggle">
+					    	<button>Đăng Xuất</button>
+					    </div>
+				  	</div>
+				  </div>
+		  	<!-- End Toggle Menu -->
+				</div>
+					<!-- End Contact -->
+			</div>
+		</div>
+	</div>
+		<!-- End sc-header -->
+
+
+	<div class="sc-center">
+		<div class="container-center">
+			<div class="flex-center">
+				
+				<!-- Menu Center -->
+				<div class="menu_center">
+					<ul class="flex_menu">
+						<li><a href="Dashboard.html"><img src="image/dashboard-nau.svg">Dashboard</a></li>
+						<li><a href="javascript:void(0)" id="dashboard" class="active"><img src="image/user-pink.svg">Thông tin</a></li>
+						<li><a href="#"><img src="image/withdraw.svg" alt="">Rút tiền</a></li>
+						<li><a href="#"><img src="image/chuyen_nhuong.svg" alt="">Lịch sử giao dịch</a></li>
+						<li><a href="#"><img src="image/love.svg">Người thích tôi</a></li>
+						<li><a href="#"><img src="image/tutorial.svg">Hướng dẫn</a></li>
+						<li><a href="setting.html"><img src="image/settings.svg">Cài đặt</a></li>
+					</ul>
+				</div>
+				<!-- End Menu Center -->
+
+
+				<!-- Information -->
+				<div class="flex_information">
+
+							<!-- Header Center -->
+					<div class="name_header">
+						<div class="flex_name_header">
+							<div class="upload_image">
+								<img src="image/people.svg" id="output">
+								<label for="file-input">
+								    <img src="image/cam.svg"/>
+								</label>
+								<input type="file" accept="image/*" onchange="loadFile(event)" accept=".jpg, .svg, .png" id="file-input">
+							</div>
+							<div class="name_me">
+								<div>Nguyễn Đình Trần Thiện</div>
+								<div>ThienNguyen0324</div>
+							</div>
+						</div>
+
+						<div class="button_flex_header">
+							<button><img src="image/face.png"></button>
+							<button><img src="image/insta.png"></button>
+							<button><img src="image/tiktok.png"></button>
+						</div>
+					</div>
+							<!-- End Header Center -->
+
+							<!-- Info -->
+					<div class="info">
+
+						<div class="info__name">
+							<div class="width__input">
+								<div class="text__info">Chủ tài khoản</div>
+								<input type="text" name="" value="Nguyễn Đình Trần Thiện">
+							</div>
+							<div class="width__input">
+								<div class="text__info">Nickname</div>
+								<input type="text" name="" value="ThienNguyen0324">
+							</div>
+						</div>
+
+						<div class="info__name">
+							<div class="width__input">
+								<div class="text__info">Số tài khoản</div>
+								<input type="text" name="" value="0123 456 7890">
+							</div>
+							<div class="width__input">
+								<div class="text__info">Ngân hàng</div>
+								<select>
+									<option>Ngân hàng Á Châu ACB</option>
+									<option>Techcombank</option>
+									<option>BIDV</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="info__name">
+							<div class="width__input">
+								<div class="text__info">Link URL</div>
+								<div class="form-check">
+							      <input type="checkbox" class="form-check-input" id="check_1" name="option1" value="something" checked="checked" >
+							      <label class="form-check-label" for="check_1">https://www.google.com/?gws_rd=ssl</label>
+							    </div>
+							    <div class="form-check">
+							      <input type="checkbox" class="form-check-input" id="check_2" name="option2" value="something">
+							      <label class="form-check-label" for="check_2">https://vnexpress.net/</label>
+							    </div>
+							</div>
+						</div>
+					</div>
+
+						<!-- End Info -->
+
+						<!-- Game -->
+					<div class="game">
+						<div class="checkbox_game">
+							<div class="text__info">Game</div>
+								<!-- Check1 -->
+							<div class="flex_game">
+								<div class="form_check">
+							      <input type="checkbox" class="form-check-input check_input" id="check1" name="option1" value="something" checked="checked" >
+							      <label class="form-check-label" for="check1">
+							      	<img src="image/call-of-duty.png">
+							      	<div class="color_game">Call of Duty</div>
+							      </label>
+							    </div>
+							    	<!-- Check2 -->
+							    <div class="form_check">
+							      <input type="checkbox" class="form-check-input check_input" id="check2" name="option2" value="something">
+							      <label class="form-check-label" for="check2">
+							      	<img src="image/lmht.png">
+							      	<div class="color_game">Liên minh huyền thoại</div>
+							      </label>
+							    </div>
+							    		<!-- Check3 -->
+							    <div class="form_check">
+							      <input type="checkbox" class="form-check-input check_input" id="check3" name="option1" value="something" checked="checked" >
+							      <label class="form-check-label" for="check3">
+							      	<img src="image/fo4.png">
+							      	<div class="color_game">Fifa online 4</div>
+							      </label>
+							    </div>
+							    		<!-- Check4 -->
+							    <div class="form_check">
+							      <input type="checkbox" class="form-check-input check_input" id="check4" name="option2" value="something">
+							      <label class="form-check-label" for="check4">
+							      	<img src="image/vltk.png">
+							      	<div class="color_game">Võ lâm truyền kỳ 2</div>
+							      </label>
+							    </div>
+							</div>
+							<div class="flex-game">
+							    		<!-- Check5 -->
+							    <div class="form_check">
+							      <input type="checkbox" class="form-check-input check_input" id="check5" name="option2" value="something">
+							      <label class="form-check-label" for="check5">
+							      	<img src="image/lq-moblie.png">
+							      	<div class="color_game">Liên quân Mobile</div>
+							      </label>
+							    </div>
+							    		<!-- Check6 -->
+							    <div class="form_check">
+							      <input type="checkbox" class="form-check-input check_input" id="check6" name="option2" value="something">
+							      <label class="form-check-label" for="check6">
+							      	<img src="image/pubg.png">
+							      	<div class="color_game">PUBG</div>
+							      </label>
+							    </div>
+						    		<!-- End Check -->
+						    </div>
+						</div>
+						<div class="width__input">
+							<div class="text__info">Danh hiệu</div>
+							<input type="text" name="">
+						</div>
+					</div>
+						<!-- End Game -->
+
+
+							<!-- Introduce -->
+					<div class="introduce">
+						<div class="short_introduction">
+							<div class="text__info">Giới thiệu ngắn</div>
+							<textarea placeholder="Giới thiệu ngắn về bản thân"></textarea>
+						</div>
+
+						<div class="image">
+							<div class="text__info">Ảnh</div>
+							<div class="flex_image_video">
+								<div  class="more">
+									<label for="more_photos">
+									    <img src="image/plus_image.svg">
+									    <div>Thêm ảnh</div>
+									</label>
+									<input type="file" accept="image/*" onchange="loadFile(event)" accept=".jpg, .svg, .png" id="more_photos">
+								</div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+							</div>
+						</div>
+
+						<div class="video">
+							<div class="text__info">Video</div>
+							<div class="flex_video_image">
+								<div  class="more">
+									<label for="more_photos">
+									    <img src="image/plus_image.svg">
+									    <div>Thêm video</div>
+									</label>
+									<input type="file" accept="video/*" onchange="loadFile(event)" accept=".mp4" id="more_photos">
+								</div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+								<div class="photo_video"><img src="image/hello.jpg"></div>
+							</div>
+						</div>
+
+						<div class="detailed_introduction">
+							<div class="text__info">Giới thiệu Chi tiết</div>
+							<img src="image/word.png">
+						</div>
+					</div>
+						<!-- End Introduce -->
+
+				</div>
+				<!-- End Information -->
+
+
+			</div>
+		</div>
+	</div>
+	<!-- End  Sc-center -->
+
+
+	<!-- Sc-footer -->
+	<div class="sc-footer">
+		<div class="container-footer">
+			<button>Lưu Lại</button>
+		</div>
+	</div>
+	<!-- End Sc-footer -->
+
+</div>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").addClass("blue");
+    $("div").addClass("important");
+  });
+});
+</script>
+
+<script src="jquery.js"></script>
+<script>
+
+$("#plus").on('click', function() {
+   $("#number").html(parseInt($('#number').html(), 10)+1);
+});
+$("#minus").on('click', function() {
+   $("#number").html(parseInt($('#number').html(), 10)-1)
+});
+
+</script>
+<script>
+$(document).ready(function(){
+  $("#close_play_games").click(function(){
+    $(".play_games").hide();
+  });
+  $("#close_voice_chat").click(function(){
+    $(".voice_chat").hide();
+  });
+  $("#close_watch_movies").click(function(){
+    $(".watch_movies").hide();
+  });
+});
+</script>
+<script>
+	$(document).ready(function(){
+	  $("#save").click(function(){
+	    $(".pass").hide();
+	    $(".password").hide();
+	  });
+	$('.message').click(function(){
+		$('.chat__window').addClass('new__window');
+	})
+	$('.chat__close').click(function(){
+		$('.chat__window').removeClass('new__window');
+	})
+	});
+</script>
+<script type="text/javascript">
+    var main = function() {
+  $('#announcement').click(function() {
+    $('.notification-menu').toggle(); 
+  }); 
+}; 
+$(document).ready(main); 
+</script>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+</script>
+<script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="library/js/banner.js"></script>
+</body>
+</html>
